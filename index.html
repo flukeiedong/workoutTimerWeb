@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Workout Timer Demo</title>
+  </head>
+  <body>
+    <h1 class="round">ROUND 1</h1>
+
+    <div class="setting_button">
+      <img src="icon/setting_icon.png" alt="Settings" onclick="setting()" width="100%" height="100%">
+      <div class="input_form" style="display: none;">
+        <label>Lap time:</label>
+        <input type="text" id="laptime_input" value="40" size="3"><br>
+        <label>Break time:</label>
+        <input type="text" id="breaktime_input" value="15" size="3"><br>
+        <button onclick="save()">SAVE</button>
+      </div>
+    </div>
+
+    <h1 class="title">Pace</h1>
+    <h1 id="time_remain">40</h1>
+    <div class="progress_bar_container">
+        <div class="progress_bar">
+
+        </div>
+    </div>
+
+    <div class="button_container">
+      <button class="button start_button" onclick="start()">Start</button>
+      <button class="button stop_button" onclick="stopWorkout()">Stop</button>
+    </div>
+
+  </body>
+  <script src="app.js" charset="utf-8"></script>
+</html>
